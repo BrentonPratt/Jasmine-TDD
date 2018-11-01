@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.1/css/all.css" integrity="sha384-5sAR7xN1Nv6T6+dT2mhtzEpVJvfS3NScPQTrOxhwjIuvcA67KV2R5Jz6kr4abQsz" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js" defer></script>
+    <script src="main.js" defer></script>
+</head>
+<body onload="getInfo()">
+<div class="modal">
+    <select id="courseSelect" onchange="loadCourse(this.value)">
+        <option value="Select A Course!" selected="selected">Select A Course!</option>
+    </select>
+    <select id="teeSelect">
+
+    </select>
+    <div class="panel">
+        <span> Number of Players</span>
+        <input class="numInput" type="number" max="4" placeholder="Number of Players">
+        <button onclick="makeCard()">Go!</button>
+    </div>
+</div>
+<div class="content">
+    <div class="players"></div>
+    <div class="card">
+
+    </div>
+</div>
+</body>
+</html>
